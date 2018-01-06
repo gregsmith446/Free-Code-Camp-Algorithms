@@ -37,24 +37,26 @@
 //check the next number
 //is prime
 
-function isPrime(num) { //find prime numbers
-  for (var n = 2; n < num; n++) { //looping structure
+// Step 1 --> find prime numbers
+function isPrime(num) { // a function called isPrime that takes a number called num
+  for (var n = 2; n < num; n++) { // starts with 2 and goes up by one number at a time
     if (num % n == 0) { //if number is divisible by 2
       return false; // number is not prime
     }
   }
-  return true; // number is prime
+  return true; // number is prime because it is divisible by 2
 }
 
-function sumPrimes(num) { //adds prime nums in range
-  var total = 0;
-  for (var n = 2; n <= num; n++) {
-    if (isPrime(n)) {
-      total += n; //short form
+// Step 2 add prime numbers in a range
+function sumPrimes(num) { // a function called sumPrimes that takes a number called num
+  var total = 0; //created variable total to keep track of prime numbers
+  for (var n = 2; n <= num; n++) { // starts with 2 and goes up by 1 number at a time until reaching the final provided number
+    if (isPrime(n)) { //if the number is prime
+      total += n; // add it to the total variable to keep a running total
       //total = total + n; // long form
     }
   }
-  return total;
+  return total; //after finished, return the total of the variable total
 }
 
 // console.log("2", isPrime(2));
