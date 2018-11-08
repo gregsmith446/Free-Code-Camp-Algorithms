@@ -1,7 +1,7 @@
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 
 function printGolf(par, strokes) {
-    
+
     for (var i = 0; i < names.length; i++) {
         // console.log(names[i]);
         // console.log(names);
